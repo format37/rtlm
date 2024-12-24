@@ -1,13 +1,22 @@
 # rtlm
-Tools for downloading the [rtlm](https://rtlm.info) dataset  
-### Installation
-```
+Tools for downloading and processing the [rtlm](https://rtlm.info) dataset
+
+## Installation
+```bash
 git clone https://github.com/format37/rtlm.git
 cd rtlm
 pip install -r requirements.txt
 ```
-### Download
+
+## Usage
+
+### Download Dataset
+```bash
+python download_parquet.py
 ```
-python download.py
+
+### Query with BigQuery
+For users with Google Cloud access:
+```bash
+python big_query_request.py
 ```
-The repeated execution of the script will not download the same files again.
